@@ -23,22 +23,11 @@ print("The computer chose: " + computer_choice)
 # continue this if statement to print out the winner
 if user_choice == computer_choice:
   print("It's a tie!")
-# write stuff here
-
-# rock beats scissors
-# paper beats rock
-# scissors beats paper
-# hint: use elif
-# hint: use and or not == !=
-# hint: use "It's a tie!"
-# hint: use "You win!"
-# hint: use "You lose!"
-
-# Example of an if statement:
-# math = input("What is 2 + 2? ")
-# if math == "4":
-#   print("You are correct!")
-# elif math == "3":
-#   print("You are close!")
-# else:
-#   print("You are wrong!")
+elif user_choice == 'rock' and computer_choice == 'scissors':
+  print("You Win")
+elif user_choice == 'paper' and computer_choice == 'rock' :  
+ print ("You Win")
+elif user_choice == 'scissors' and computer_choice == 'paper':
+ print("You Win")
+else: 
+ print("You Lose")
