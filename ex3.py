@@ -11,6 +11,8 @@ rps = ['rock','paper','scissors']
 # 2. Create a variable called user_choice that takes input from the user and stores it.
 #   Make sure the user enters rock, paper, or scissors.
 user_choice = input("rock,paper or scissor")
+while user_choice not in ["rock", "paper", "scissors"]:
+   user_choice = input("Please enter rock, paper or scissors")
 
 # 3. Create a variable called computer_choice that randomly chooses from rps.
 computer_choice = random.choice(rps)
@@ -23,11 +25,7 @@ print("The computer chose: " + computer_choice)
 # continue this if statement to print out the winner
 if user_choice == computer_choice:
   print("It's a tie!")
-elif user_choice == 'rock' and computer_choice == 'scissors':
+elif (user_choice == 'rock' and computer_choice == 'scissors') or (user_choice == 'paper' and computer_choice == 'rock') or (user_choice == 'scissors' and computer_choice == 'paper'):
   print("You Win")
-elif user_choice == 'paper' and computer_choice == 'rock' :  
- print ("You Win")
-elif user_choice == 'scissors' and computer_choice == 'paper':
- print("You Win")
 else: 
  print("You Lose")
