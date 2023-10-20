@@ -10,10 +10,10 @@ rps = ['rock','paper','scissors']
 
 # 2. Create a variable called user_choice that takes input from the user and stores it.
 #   Make sure the user enters rock, paper, or scissors.
-user_choice = "" # fix this, user input, hint: use input("...")
+user_choice = input("rock,paper or scissor")
 
 # 3. Create a variable called computer_choice that randomly chooses from rps.
-computer_choice = "" # fix this, random choice from rps
+computer_choice = random.choice(rps)
 
 # 4. Print out the user_choice and the computer_choice.
 print("You chose: " + user_choice)
